@@ -3,17 +3,25 @@
     <!-- Header Section -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Lilian Stewart">
   <meta name="description" content="Lilian Stewart UX/UI Design Portfolio">
   <meta name="keywords" content="ux designer, ui designer, user experience, user interface, dc, maryland, virginia">
   <title>Lilian Stewart - UX/UI Designer</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Libre+Franklin:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
   <header>
     <!-- Navigation -->
-    <div>
+    <div id="navigation">
       <a href="index.html">Lilian Stewart</a><br>
       <nav>
         <ul>
@@ -26,7 +34,7 @@
   </header>
   <!-- Hero Section -->
   <main>
-    <div>
+    <div id="hero">
       <div>
         <h1> Hi, I'm Lilian.</h1>
         <p>I'm a UX Designer with a background in digital project management.
@@ -40,9 +48,9 @@
     <!-- Projects Section -->
         <h2>My Design Work</h2>
 
-        <div>
+        <div id="projects">
           <!-- Project 1 -->
-          <div>
+          <div id="project-1">
             <!-- column 1 picture-->
             <picture>
               <source srcset="img/Flock/Flock600.jpg" media="(max-width:767px)">
@@ -57,13 +65,13 @@
               Flock provides users with a dedicated space to share inspirational content and connect with Scripture.</p>
             <h3>Tasks and Deliverables</h3>
             <p>App Ideation, Competitive Research, User Flows, wireframes, Prototyping, UI Design, User Testing</p>
-            <a href="flock.html">View Case Study</a><!-- button or link label -->
+            <a href="flock.html" class="button view">View Case Study</a><!-- button or link label -->
           </div><!-- end column 2 text -->
           <div>
             <!-- End Project 1 -->
 
-            <div>
               <!-- Project 2 -->
+            <div id="project 2">
               <div>
                 <!-- column 1 picture -->
                 <picture>
@@ -78,7 +86,7 @@
                 <p>MindSoulBeauty is a modern, intuitive eCommerce shopping app for a holistic wellness and organic skincare brand. MindSoulBeauty makes it simple for customers to find personalized holistic wellness products. </p>
                 <h3>Tasks and Deliverables</h3>
                 <p>User Research, User Testing, Information Architecture, Wireframes, Prototypes, UI Design, Brand Style Design</p>
-                <a href="mindsoulbeauty.html">View Case Study</a><!-- button or link label -->
+                <a href="mindsoulbeauty.html" class="button view">View Case Study</a><!-- button or link label -->
               </div>
             </div><!-- End Project 2 -->
 
@@ -98,10 +106,10 @@
         Have a design project in mind? Let's talk. Call: <a href="tel:+12026602130">202.660.2130</a> or Email:
       </p>
       <div>
-        <a href="mailto:lilian@lilianstewart.com">Email me</a>
+        <a href="mailto:lilian@lilianstewart.com" class="button contact">Email me</a>
       </div>
 
-      <div>
+      <div id="social">
         <!--Social Media Layout and Placeholders-->
         <p>Connect on Social Media</p>
         <ul>
