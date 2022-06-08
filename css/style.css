@@ -82,6 +82,8 @@ a:active { /* selected link */
     transition: 0.2s opacity;
     border: 1px solid #61AAB5;
     text-transform: none;
+    transition-duration: 1.6s;
+    transition-property: opacity;
 }
 
 .button.view:hover {
@@ -90,6 +92,7 @@ a:active { /* selected link */
   text-decoration: none;
   border: 1px solid #61AAB5;
   text-transform: none;
+  opacity:0.8;
 }
 
 .button.view:active {
@@ -110,6 +113,9 @@ a:active { /* selected link */
   transition: 0.2s opacity;
   border: 1px solid #61AAB5;
   text-transform: none;
+  display: inline-block;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button.resume:hover {
@@ -118,6 +124,7 @@ a:active { /* selected link */
   text-decoration: none;
   border: 1px solid #61AAB5;
   text-transform: none;
+  opacity: 0.8;
 }
 
 .button.resume:active {
@@ -136,6 +143,9 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   transition: 0.2s opacity;
+  display: inline-block;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button.contact:hover {
@@ -173,7 +183,7 @@ header {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#project .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#project .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; margin:20p}
 
 #hero {
   background-color: #f7f7f7;
@@ -186,6 +196,9 @@ header {
   text-align: center; /* Centers text */
 }
 
+#hero span {
+  display: block;
+}
 /*
 main {
   padding-top: 133px;
@@ -292,4 +305,111 @@ nav > ul > li > a:active {
   text-align:center;
   padding: 0 15px;
   margin: 25px;
+}
+
+.project-1 {
+  display: block;
+
+}
+
+
+/* MEDIA QUERIES/*
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+/* COLUMNS */
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 20px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #3A666C;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+
+/* CSS3 Animation */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+#about-picture img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
