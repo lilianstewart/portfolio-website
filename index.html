@@ -21,10 +21,10 @@
 
   <header>
     <!-- Navigation -->
-    <div id="navigation">
-      <a href="index.html">Lilian Stewart</a><br>
+    <div id="navigation" class="container">
+      <a href="index.html" class="logo">Lilian Stewart</a><br>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -35,7 +35,7 @@
   <!-- Hero Section -->
   <main>
     <div id="hero">
-      <div>
+      <div  class="container">
         <h1> Hi, I'm Lilian.</h1>
         <p>I'm a UX Designer with a background in digital project management.
           As a multidisciplinary user-centric designer with a focus on digital product optimization,
@@ -46,11 +46,13 @@
 
 
     <!-- Projects Section -->
-        <h2>My Design Work</h2>
 
-        <div id="projects">
+
+        <div id="project">
+          <div class="container">
+          <h2>My Design Work</h2>
           <!-- Project 1 -->
-          <div id="project-1">
+          <div>
             <!-- column 1 picture-->
             <picture>
               <source srcset="img/Flock/Flock600.jpg" media="(max-width:767px)">
@@ -58,7 +60,7 @@
             </picture>
           </div><!-- end column 1 picture-->
 
-          <div>
+          <div class="row">
             <!-- column 2 text -->
             <h3>Flock</h3>
             <p>The Flock app is a faith-based social media app for the Christian community.
@@ -71,7 +73,7 @@
             <!-- End Project 1 -->
 
               <!-- Project 2 -->
-            <div id="project 2">
+            <div id="project">
               <div>
                 <!-- column 1 picture -->
                 <picture>
@@ -80,7 +82,7 @@
                 </picture>
               </div><!-- end column 1 picture -->
 
-              <div>
+              <div class="row">
                 <!-- Column 2 Text  -->
                 <h3>MindSoulBeauty</h3>
                 <p>MindSoulBeauty is a modern, intuitive eCommerce shopping app for a holistic wellness and organic skincare brand. MindSoulBeauty makes it simple for customers to find personalized holistic wellness products. </p>
@@ -101,7 +103,8 @@
 
   <!-- Footer -->
   <footer id="contact">
-    <div>> <h2>Get in Touch</h2>
+    <div class="container">
+       <h2>Get in Touch</h2>
       <p>
         Have a design project in mind? Let's talk. Call: <a href="tel:+12026602130">202.660.2130</a> or Email:
       </p>
