@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
 h1 {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2.75em;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 h2 {
@@ -169,8 +169,7 @@ img {
 
 header {
   background-color: #f2f2f2;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   display: inline-block;
   width: 100%;
   -webkit-box-shadow: 1px 1px 11px 0px rgba(100, 150, 160, 0.5);
@@ -203,26 +202,19 @@ header {
 main {
   padding-top: 133px;
 }
-*/
+
 
 /* NAVIGATION STYLING */
-.logo {
-  max-width: 250px;
-}
-
-nav {
-  display:inline-block;
-  width:100%;
-}
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
+/*nav > ul > li {
   display: inline-block;
-}
+}*/
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -242,15 +234,70 @@ nav > ul > li > a:hover, a:focus {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #3A666C;
+  color: #3c7e84;
 }
 
 nav > ul > li > a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #3A666C;
+  color: #3c7e84;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.logo {
+  max-width: 250px;
+  font-size: 1.8em;
+
+
+}
+
+a.logo {
+    float: left;
+    padding: 0 15px;
+    color: #106a78;
+    font-weight: 700;
+    text-transform: none
+}
+
+a:visited.logo {
+    padding: 0 15px;
+    text-transform: none}
+
+a:focus,a:active.logo {
+    padding: 0 15px;
+    text-transform: none}
 
 #contact  {
   background-color: #f2f2f2;
@@ -322,13 +369,33 @@ Medium devices (640px and larger)
 
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px 0 20px;
+  }
+
+  .logo {
+    margin-top: 30px;
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 }
 /* ==============================
@@ -339,6 +406,11 @@ Large devices (1024px or larger)
   margin-left: auto;
   margin-right: auto;
 }
+nav > ul > li {
+  display: inline-block;
+}
+
+
 }
 
 /* COLUMNS */
