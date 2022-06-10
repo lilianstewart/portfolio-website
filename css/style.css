@@ -46,11 +46,12 @@ h3 {
   font-weight: 600;
 }
 h4 {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 1.35em;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-spacing: 1.3;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: #106978;
 }
 
 a {
@@ -182,7 +183,7 @@ header {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-.project .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; margin:20p}
+.project .row { padding: 25px; border-bottom: 1px solid #4a4a4a;}
 
 #hero {
   background-color: #f7f7f7;
@@ -197,6 +198,13 @@ header {
 
 #hero span {
   display: block;
+
+}
+
+#hero .container {
+  margin:20px auto;
+
+
 }
 /*
 main {
@@ -356,8 +364,11 @@ a:focus,a:active.logo {
 
 .project-1 {
   display: block;
-
 }
+
+.project h2
+  {margin: 25px;}
+
 
 
 /* MEDIA QUERIES/*
@@ -397,6 +408,15 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+
+
+
+ #hero .container {
+   margin:20px auto;
+   width: 50%;
+
+ }
+
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -410,12 +430,21 @@ nav > ul > li {
   display: inline-block;
 }
 
+  .project .row {
+    padding-left: 20px;
+    margin-left: 20px
+  }
+
+
+  #hero .container {
+    margin:20px auto;
+  }
 
 }
 
 /* COLUMNS */
 .col-md-6 {
-  width: 50%;
+  width: 60%;
 }
 
 [class*="col-"] {
@@ -480,7 +509,7 @@ nav > ul > li {
   to {transform: translate(100px, 48px);}
 }
 
-#about-picture img {
+#about-picture .berlin-illustration img {
   width: 100%;
   max-width: 100%;
   height: auto;
