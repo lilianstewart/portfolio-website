@@ -55,12 +55,12 @@ h4 {
 }
 
 a {
-  color: #61AAB5;
+  color: #407F89;
   text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
-  color: #61AAB5;
+  color: #407F89;
 }
 
 a:hover,
@@ -77,30 +77,30 @@ a:active { /* selected link */
 .button.view {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #ffffff;
-    color: #61AAB5; /* needed to override the default link color */
+    color: #407F89; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     transition: 0.2s opacity;
-    border: 1px solid #61AAB5;
+    border: 1px solid #407F89;
     text-transform: none;
     transition-duration: 1.6s;
     transition-property: opacity;
 }
 
 .button.view:hover {
-  background-color: #61AAB5;
+  background-color: #407F89;
   color: #ffffff;
   text-decoration: none;
-  border: 1px solid #61AAB5;
+  border: 1px solid #407F89;
   text-transform: none;
   opacity:0.8;
 }
 
 .button.view:active {
-  background-color: #61AAB5;
+  background-color: #407F89;
   color: #ffffff;
   text-decoration: none;
-  border: 1px solid #61AAB5;
+  border: 1px solid #407F89;
   text-transform: none;
 }
 
@@ -108,11 +108,11 @@ a:active { /* selected link */
 .button.resume {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ffffff;
-  color: #61AAB5; /* needed to override the default link color */
+  color: #407F89; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   transition: 0.2s opacity;
-  border: 1px solid #61AAB5;
+  border: 1px solid #407F89;
   text-transform: none;
   display: inline-block;
   transition-duration: 0.2s;
@@ -120,16 +120,16 @@ a:active { /* selected link */
 }
 
 .button.resume:hover {
-  background-color: #61AAB5;
+  background-color: #407F89;
   color: #ffffff;
   text-decoration: none;
-  border: 1px solid #61AAB5;
+  border: 1px solid #407F89;
   text-transform: none;
   opacity: 0.8;
 }
 
 .button.resume:active {
-  background-color: #61AAB5;
+  background-color: #407F89;
   color: #ffffff;
   text-decoration: none;
   border: 1px solid #61AAB5;
@@ -139,7 +139,7 @@ a:active { /* selected link */
 /* FOOTER EMAIL BUTTON */
 .button.contact {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #61AAB5;
+  background-color: #407F89;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -369,7 +369,10 @@ a:focus,a:active.logo {
 .project h2
   {margin: 25px;}
 
-
+.project-image {
+  text-align:center;
+  margin: 0 auto;
+}
 
 /* MEDIA QUERIES/*
 /* ==============================
